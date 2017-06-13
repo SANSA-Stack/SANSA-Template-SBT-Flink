@@ -1,15 +1,15 @@
 name := "SANSA-Template-SBT-Flink"
 
-version := "0.1.0"
+version := "0.2.0"
 
 scalaVersion := "2.11.8"
 
 val varscalaVersion = "2.11.8"
 val varscalaBinaryVersion = "2.11"
 
-val sansaVersion = "0.1.0"
+val sansaVersion = "0.2.0"
 
-val flinkVersion = "1.1.3"
+val flinkVersion = "1.3.0"
 
 libraryDependencies ++= Seq(
   "org.apache.flink" %% "flink-scala" % flinkVersion % "provided",
@@ -36,7 +36,7 @@ resolvers ++= Seq(
   "AKSW Maven Snapshots" at "http://maven.aksw.org/archiva/repository/snapshots",
   "oss-sonatype" at "https://oss.sonatype.org/content/repositories/snapshots/",
   "Apache repository (snapshots)" at "https://repository.apache.org/content/repositories/snapshots/"
-)	
+)
 
 // Use local repositories by default
 resolvers ++= Seq(
@@ -48,10 +48,9 @@ resolvers ++= Seq(
 
 // | SANSA Layers
 libraryDependencies ++= Seq(
-    "net.sansa-stack" % "sansa-rdf-flink" % sansaVersion,
-    "net.sansa-stack" % "sansa-owl-flink" % sansaVersion,
+    "net.sansa-stack" %% "sansa-rdf-flink" % sansaVersion,
+    "net.sansa-stack" %% "sansa-owl-flink" % sansaVersion,
     "net.sansa-stack" %% "sansa-inference-parent" % sansaVersion,
     "net.sansa-stack" %% "sansa-inference-flink" % sansaVersion,
-    "net.sansa-stack" % "sansa-query-spark-bundle" % sansaVersion
+    "net.sansa-stack" %% "sansa-query-spark-bundle" % sansaVersion
 )
-  
