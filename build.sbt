@@ -1,13 +1,13 @@
 name := "SANSA-Template-SBT-Flink"
 
-version := "0.4.0"
+version := "0.4.1-SNAPSHOT"
 
 scalaVersion := "2.11.11"
 
 val varscalaVersion = "2.11.11"
 val varscalaBinaryVersion = "2.11"
 
-val sansaVersion = "0.4.0"
+val sansaVersion = "0.4.1-SNAPSHOT"
 
 val flinkVersion = "1.5.0"
 
