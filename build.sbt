@@ -32,6 +32,7 @@ resolvers ++= Seq(
   "AKSW Maven Snapshots" at "http://maven.aksw.org/archiva/repository/snapshots",
   "oss-sonatype" at "https://oss.sonatype.org/content/repositories/snapshots/",
   "Apache repository (snapshots)" at "https://repository.apache.org/content/repositories/snapshots/",
+  "Sonatype snapshots" at "http://oss.sonatype.org/content/repositories/snapshots/", "NetBeans" at "http://bits.netbeans.org/nexus/content/groups/netbeans/", "gephi" at "https://raw.github.com/gephi/gephi/mvn-thirdparty-repo/",
   Resolver.defaultLocal,
   Resolver.mavenLocal,
   "Local Maven Repository" at "file://"+Path.userHome.absolutePath+"/.m2/repository",
