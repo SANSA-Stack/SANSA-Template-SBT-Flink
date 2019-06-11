@@ -7,13 +7,13 @@ scalaVersion := "2.11.11"
 val varscalaVersion = "2.11.11"
 val varscalaBinaryVersion = "2.11"
 
-val sansaRDFVersion = "0.5.0"
-val sansaOWLVersion = "0.4.1"
-val sansaQueryVersion = "0.5.0"
-val sansaInferenceVersion = "0.5.0"
-val sansaMLVersion = "0.5.0"
+val sansaRDFVersion = "0.5.1-SNAPSHOT"
+val sansaOWLVersion = "0.4.2-SNAPSHOT"
+val sansaQueryVersion = "0.5.1-SNAPSHOT"
+val sansaInferenceVersion = "0.5.1-SNAPSHOT"
+val sansaMLVersion = "0.5.1-SNAPSHOT"
 
-val flinkVersion = "1.7.0"
+val flinkVersion = "1.8.0"
 
 libraryDependencies ++= Seq(
   "org.apache.flink" %% "flink-scala" % flinkVersion,
