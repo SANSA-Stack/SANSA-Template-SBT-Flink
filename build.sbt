@@ -1,6 +1,6 @@
 name := "SANSA-Template-SBT-Flink"
 
-version := "0.6.0"
+version := "0.6.1-SNAPSHOT"
 
 scalaVersion := "2.11.11"
 
@@ -8,7 +8,7 @@ val varscalaVersion = "2.11.11"
 val varscalaBinaryVersion = "2.11"
 
 val flinkVersion = "1.8.0"
-val sansaVersion = "0.6.0"
+val sansaVersion = "0.6.1-SNAPSHOT"
 
 libraryDependencies ++= Seq(
   "org.apache.flink" %% "flink-scala" % flinkVersion,
