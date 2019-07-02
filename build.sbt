@@ -1,19 +1,14 @@
 name := "SANSA-Template-SBT-Flink"
 
-version := "0.5.1-SNAPSHOT"
+version := "0.6.0"
 
 scalaVersion := "2.11.11"
 
 val varscalaVersion = "2.11.11"
 val varscalaBinaryVersion = "2.11"
 
-val sansaRDFVersion = "0.5.1-SNAPSHOT"
-val sansaOWLVersion = "0.4.2-SNAPSHOT"
-val sansaQueryVersion = "0.5.1-SNAPSHOT"
-val sansaInferenceVersion = "0.5.1-SNAPSHOT"
-val sansaMLVersion = "0.5.1-SNAPSHOT"
-
 val flinkVersion = "1.8.0"
+val sansaVersion = "0.6.0"
 
 libraryDependencies ++= Seq(
   "org.apache.flink" %% "flink-scala" % flinkVersion,
@@ -41,9 +36,9 @@ resolvers ++= Seq(
 
 // | SANSA Layers
 libraryDependencies ++= Seq(
-    "net.sansa-stack" %% "sansa-rdf-flink" % sansaRDFVersion,
-    "net.sansa-stack" %% "sansa-owl-flink" % sansaOWLVersion,
-    "net.sansa-stack" %% "sansa-inference-flink" % sansaInferenceVersion,
-    "net.sansa-stack" %% "sansa-query-flink" % sansaQueryVersion,
-    "net.sansa-stack" %% "sansa-ml-flink" % sansaMLVersion
+    "net.sansa-stack" %% "sansa-rdf-flink" % sansaVersion,
+    "net.sansa-stack" %% "sansa-owl-flink" % sansaVersion,
+    "net.sansa-stack" %% "sansa-inference-flink" % sansaVersion,
+    "net.sansa-stack" %% "sansa-query-flink" % sansaVersion,
+    "net.sansa-stack" %% "sansa-ml-flink" % sansaVersion
 )
